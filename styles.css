@@ -1,0 +1,65 @@
+html{
+  background-color: white;
+  color: black;
+}
+
+body{
+  margin:0px;
+}
+
+.menu{
+  display: block;
+  position: absolute;
+  background-color: lightblue;
+  width: 5%;
+  height:100%;
+  }
+
+.menu-item{
+  display: none;
+  text-align: center;
+}
+
+
+.menu:hover .menu-item{
+  display:block;
+  width: 75px;
+  position:relative;
+  margin-bottom: 25px;
+  padding: 10px;
+}
+
+.menu-item:hover{
+    background-color: lightcoral;
+    cursor: pointer;
+}
+
+.menu:hover{
+  width: auto;
+}
+
+.dropdown{
+  display:none;
+  white-space: nowrap;
+  overflow: hidden;
+  width: auto;
+}
+
+.menu-item:hover .dropdown{
+  display:block;
+  position:absolute;
+  left:100%;
+  top: 0%;
+  background-color: lightblue;
+}
+
+.menu-item:hover .dropdown-item{
+  padding: 10px;
+  margin: 0px;
+}
+
+.dropdown-item:hover{
+  background-color: lightcoral;
+  padding:inherit;
+  cursor: pointer;
+}
